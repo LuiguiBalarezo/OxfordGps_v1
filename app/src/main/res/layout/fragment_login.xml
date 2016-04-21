@@ -1,0 +1,79 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fillViewport="true"
+    tools:context=".MainActivity$PlaceholderFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/Img_logo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/back_logo"
+            android:padding="10dp"
+            android:src="@drawable/logo_oxford" />
+
+        <RelativeLayout
+            android:id="@+id/Rltv_baselogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Img_logo"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="100dp"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/Edt_user"
+                style="@style/edt_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Correo@dominio.com"
+                android:inputType="textNoSuggestions|textEmailAddress" />
+
+            <View
+                android:id="@+id/View_separator"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/Edt_user"
+                android:background="@color/blanco" />
+
+            <EditText
+                android:id="@+id/Edt_pass"
+                style="@style/edt_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/View_separator"
+                android:hint="Contraseña"
+                android:inputType="numberPassword" />
+
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/Btn_singin"
+            style="@style/btn_login"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Rltv_baselogin"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="60dp"
+            android:text="Sing in"
+            android:layout_alignLeft="@+id/Rltv_baselogin"
+            android:layout_alignStart="@+id/Rltv_baselogin"
+            android:layout_alignRight="@+id/Rltv_baselogin"
+            android:layout_alignEnd="@+id/Rltv_baselogin" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

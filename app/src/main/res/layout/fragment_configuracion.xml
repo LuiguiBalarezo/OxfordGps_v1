@@ -1,0 +1,264 @@
+<com.tamc.oxfordgps_v1.utils.ObservableScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Scrl_configuracion"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    tools:context="com.tamc.oxfordgps_v1.fragments.Configuracion">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <View
+                android:id="@+id/View_indicator_for_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="55dp"
+                android:background="@android:color/transparent"
+                android:layout_weight="0.54" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Usuario"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/blanco" />
+
+            <Spinner
+                android:id="@+id/Spn_config"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/Edt_correo_config"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:elegantTextHeight="true"
+                android:enabled="false"
+                android:hint="Correo"
+                android:textSize="16sp"
+                android:visibility="gone"
+                app:met_floatingLabel="normal"
+                app:met_floatingLabelTextColor="#BDBDBD"
+                app:met_helperText="helper is here"
+                app:met_maxCharacters="50"
+                app:met_primaryColor="@color/plomo"
+                app:met_textColor="@color/blanco"
+                app:met_textColorHint="@color/plomo"
+                app:met_underlineColor="@color/plomo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/Edt_dni_config"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:elegantTextHeight="true"
+                    android:enabled="false"
+                    android:hint="DNI"
+                    android:textSize="16sp"
+                    app:met_floatingLabel="normal"
+                    app:met_floatingLabelTextColor="#BDBDBD"
+                    app:met_helperText="helper is here"
+                    app:met_maxCharacters="8"
+                    app:met_primaryColor="@color/plomo"
+                    app:met_textColor="@color/blanco"
+                    app:met_textColorHint="@color/plomo"
+                    app:met_underlineColor="@color/plomo" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/Edt_celular_config"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:elegantTextHeight="true"
+                    android:enabled="false"
+                    android:hint="Celular"
+                    android:textSize="16sp"
+                    app:met_floatingLabel="normal"
+                    app:met_floatingLabelTextColor="#BDBDBD"
+                    app:met_maxCharacters="9"
+                    app:met_primaryColor="@color/blanco"
+                    app:met_textColor="@color/blanco"
+                    app:met_textColorHint="@color/plomo"
+                    app:met_underlineColor="@color/plomo" />
+
+            </LinearLayout>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/Edt_nombres_config"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:elegantTextHeight="true"
+                android:enabled="false"
+                android:hint="Nombre(s)"
+                android:textSize="16sp"
+                app:met_floatingLabel="normal"
+                app:met_floatingLabelTextColor="#BDBDBD"
+                app:met_maxCharacters="30"
+                app:met_primaryColor="@color/plomo"
+                app:met_textColor="@color/blanco"
+                app:met_textColorHint="@color/plomo"
+                app:met_underlineColor="@color/plomo" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/Edt_apellidos_config"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:elegantTextHeight="true"
+                android:enabled="false"
+                android:hint="Apellido(s)"
+                android:textSize="16sp"
+                app:met_floatingLabel="normal"
+                app:met_floatingLabelTextColor="#BDBDBD"
+                app:met_maxCharacters="30"
+                app:met_primaryColor="@color/plomo"
+                app:met_textColor="@color/blanco"
+                app:met_textColorHint="@color/plomo"
+                app:met_underlineColor="@color/plomo" />
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Conexion"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/blanco" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/Edt_ip_config"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:elegantTextHeight="true"
+                    android:enabled="false"
+                    android:hint="IP"
+                    android:text="107.170.77.150"
+                    android:textSize="16sp"
+                    app:met_floatingLabel="normal"
+                    app:met_floatingLabelTextColor="#BDBDBD"
+                    app:met_maxCharacters="15"
+                    app:met_primaryColor="@color/plomo"
+                    app:met_textColor="@color/blanco"
+                    app:met_textColorHint="@color/plomo"
+                    app:met_underlineColor="@color/plomo" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/Edt_port_config"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:elegantTextHeight="true"
+                    android:enabled="false"
+                    android:hint="Puerto"
+                    android:text="1721"
+                    android:textSize="16sp"
+                    app:met_floatingLabel="normal"
+                    app:met_floatingLabelTextColor="#BDBDBD"
+                    app:met_maxCharacters="9"
+                    app:met_primaryColor="@color/blanco"
+                    app:met_textColor="@color/blanco"
+                    app:met_textColorHint="@color/plomo"
+                    app:met_underlineColor="@color/plomo" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/Edt_interval_config"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:elegantTextHeight="true"
+                    android:enabled="false"
+                    android:gravity="center_horizontal"
+                    android:hint="Intervalo"
+                    android:textSize="16sp"
+                    app:met_floatingLabel="normal"
+                    app:met_floatingLabelTextColor="#BDBDBD"
+                    app:met_maxCharacters="15"
+                    app:met_primaryColor="@color/plomo"
+                    app:met_textColor="@color/blanco"
+                    app:met_textColorHint="@color/plomo"
+                    app:met_underlineColor="@color/plomo" />
+
+                <com.appyvet.rangebar.RangeBar
+                    android:id="@+id/Rgb_interval_config"
+                    android:layout_width="match_parent"
+                    android:layout_height="72dp"
+                    android:layout_weight="1"
+                    app:barColor="@color/blanco"
+                    app:barWeight="0.5dp"
+                    app:connectingLineColor="@color/colorPrimary"
+                    app:pinColor="@color/colorPrimary"
+                    app:selectorColor="@color/colorPrimary"
+                    app:textColor="@color/blanco"
+                    app:tickColor="@color/blanco"
+                    app:tickEnd="15"
+                    app:tickHeight="0.5dp"
+                    app:tickInterval="1"
+                    app:tickStart="1"
+                    custom:rangeBar="false" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/Btn_guardar"
+                style="@style/btn_guardar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Guardar" />
+
+            <Button
+                android:id="@+id/Btn_modificar"
+                style="@style/btn_guardar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:visibility="gone"
+                android:text="Guardar Modificacion" />
+
+        </LinearLayout>
+
+</com.tamc.oxfordgps_v1.utils.ObservableScrollView>
